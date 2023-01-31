@@ -3,6 +3,7 @@
 
 brew install iterm2
 brew install starship
+brew install gh
 
 brew install --cask 1password
 brew install --cask visual-studio-code
