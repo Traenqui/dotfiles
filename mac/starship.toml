@@ -1,0 +1,73 @@
+format = """
+$fill\
+$directory\ 
+$git_branch\
+$git_status\
+$package\
+$python\
+$nodejs\
+$time\
+$line_break\
+[](#4C566A)\
+$username\
+$character\
+[ ](#4C566A)
+"""
+
+[fill]
+symbol=" "
+
+# Disable the blank line at the start of the prompt
+# add_newline = false
+
+# You can also replace your username with a neat symbol like   or disable this
+# and use the os module below
+[username]
+show_always = true
+style_user = "bg:#4C566A fg:#A3BE8C"
+style_root = "bg:#4C566A fg:#BF616A"
+format = '[$user ]($style)'
+disabled = false
+
+[character]
+success_symbol = "[❯](bg:#4C566A fg:#A3BE8C)"
+error_symbol = "[❯](bg:#4C566A fg:#BF616A)"
+format = '$symbol'
+
+[directory]
+style="fg:#81A1C1 bg:#4C566A"
+read_only=" \uf023"
+read_only_style="fg:#BF616A bg:#4C566A"
+format = "[](#4C566A)[\ue5ff]($style)[ $path]($style)[$read_only]($read_only_style)[](#4C566A)"
+truncation_length = 1
+truncation_symbol = ""
+
+[git_branch]
+format="[ ](#4C566A)[$symbol   $branch(:$remote_branch)]($style)"
+symbol="\uF408"
+style="fg:#D08770 bg:#4C566A"
+
+[git_status]
+style="fg:#BF616A bg:#4C566A"
+format="[ [($all_status$ahead_behind )]($style)]($style)[](#4C566A)"
+
+[package]
+symbol="\uf487"
+style="fg:#BF616A bg:#4C566A"
+format="[ ](#4C566A)[$symbol  $version]($style)[](#4C566A)"
+
+[python]
+symbol="\uf81f"
+style="fg:#A3BE8C bg:#4C566A"
+format="[ ](#4C566A)[${symbol}${pyenv_prefix} (${version} )(($virtualenv) )]($style)[](#4C566A)"
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "fg:#B48EAD bg:#4C566A"
+format = '[ ](#4C566A)[ $time]($style)[](#4C566A)'
+
+[nodejs]
+symbol = ""
+style = "fg:#A3BE8C bg:#4C566A"
+format = '[ ](#4C566A)[[ $symbol ($version) ]]($style)[](#4C566A)'
