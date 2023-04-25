@@ -6,10 +6,14 @@ brew install starship
 brew install gh
 brew install httpie
 brew install bottom
-brew install rs/tap/curlie
 brew install bat
 brew install exa
 brew install neovim
+Brew install dust
+Brew install duf
+brew install hyperfine
+brew install gping
+brew install curlie
 
 brew install --cask 1password
 brew install --cask obsidian

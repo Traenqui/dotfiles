@@ -51,4 +51,6 @@ export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="chrome"
 
+source $(brew --prefix nvm)/nvm.sh
+
 eval "$(starship init zsh)"

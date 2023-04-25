@@ -148,3 +148,27 @@ function gr {
 }
  
 # Macros
+
+function ls {
+    dir
+}
+
+function cat {
+    bat
+}
+
+function ping {
+    gping
+}
+
+function curl {
+    curlie -v
+}
+
+function http {
+    httpie
+}
+
+function du {
+    duf
+}

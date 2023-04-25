@@ -70,4 +70,4 @@ format = '[ ](#4C566A)[ $time]($style)[](#4C566A)'
 [nodejs]
 symbol = ""
 style = "fg:#A3BE8C bg:#4C566A"
-format = '[ ](#4C566A)[[ $symbol ($version) ]]($style)[](#4C566A)'
+format = '[ ](#4C566A)[${symbol} ($version)]($style)[](#4C566A)'
